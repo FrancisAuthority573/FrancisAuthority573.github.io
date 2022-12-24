@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body {
+	background-color: white;
+	color: black;
+}
+h1 {
+	font-family: Starcraft;
+	color: white;
+	text-shadow: 
+	0 0  5px #f0f, 
+	0 0 10px #fff;
+}	
+input {
+	box-shadow: 
+	0 0  5px #f0f, 
+	0 0 10px #fff;
+	border-radius: 5px;
+}	
+</style>
+<script type="text/javascript">
+function reply() {
+	var username = document.getElementById("username").value;
+	var password = document.getElementById("password").value;
+	if (username == "royal573" & password == 12349) {
+		document.location.href = "./verified.html";
+	}
+	else {
+		document.location.href = "./not_verified.html";
+	}
+}
+</script>
+</head>
+<body>
+<h1 style="text-align: center;">EVAXA LOGIN</h1> 
+<div style="box-shadow: 0 0  5px #f0f, 0 0 10px #fff, 0 0 20px #f0f; padding: 10%; margin: 5% 20% 20% 20%;">
+<center>
+Enter your username: 
+<input id="username" type="text" />
+<br />
+<br />
+Enter password:
+<input id="password" type="password" />
+<br />
+<br />
+<button onclick="reply()">send</button>
+</center>
+</div>
+</body>
+</html>

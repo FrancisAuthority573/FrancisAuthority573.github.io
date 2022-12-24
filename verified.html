@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type = "text/css">
+h1 {
+	font-family: Starcraft;
+	color: white;
+	text-shadow: 
+	0 0  5px #f0f, 
+	0 0 10px #fff;
+}
+</style>
+<script>
+function redirect () {
+	setTimeout(url, 5000);
+	var result = document.getElementById("result");
+	result.innerHTML = "<b>You will be redirected after a delay of 5 seconds";
+}
+function url() {
+	document.location.href = './main_page.html';
+}
+   </script>
+</head>
+<body style="background-color: white;">
+<h1 style="text-align: center;">EVAXA LOGIN</h1> 
+<div style="box-shadow: 0 0  5px #f0f, 0 0 10px #fff, 0 0 20px #f0f; padding: 10%; margin: 10% 20% 20% 20%;">
+<center>
+<h2>Verified !</h2>
+<p id = "result"></p>
+<button onclick = "redirect()">Click to continue</button>
+</center>
+</body>
+</html>
